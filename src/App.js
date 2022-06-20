@@ -18,7 +18,8 @@ function App() {
   <div>
       <Header/>
        <div className="container-fluid">
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className='row'>
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">Remaining time on PS-CC/EAG</p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -28,7 +29,7 @@ function App() {
 
             </div>
 
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">Remaining time in CZ</p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -37,7 +38,7 @@ function App() {
 
 
            </div>
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">Retirement</p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -46,7 +47,7 @@ function App() {
 
 
            </div>
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">Nourish </p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -55,7 +56,7 @@ function App() {
 
 
            </div>
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">another event</p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -64,7 +65,7 @@ function App() {
 
 
            </div>
-           <div className="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+           <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                <p className="mb-4 font-weight-bold text-uppercase">another event</p>
                <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                    <CountdownTimer
@@ -73,6 +74,8 @@ function App() {
 
 
            </div>
+
+       </div>
        </div>
       <Footer/>
   </div>
