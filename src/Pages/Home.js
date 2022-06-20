@@ -3,7 +3,7 @@ import CountdownTimer from "../components/CountdownTimer/CountdownTimer";
 import Footer from "../components/Footer";
 
 function Home() {
-    const myDate = "2021-07-01"
+    const myDate = "2022-07-01"
     const timestamp = +new Date(myDate)
 
     const retirement = "2047-09-01"
