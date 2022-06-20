@@ -3,7 +3,7 @@ import CountdownTimer from "../components/CountdownTimer/CountdownTimer";
 import Footer from "../components/Footer";
 
 function Home() {
-    const myDate = "2022-07-01"
+    const myDate = "2021-07-01"
     const timestamp = +new Date(myDate)
 
     const retirement = "2047-09-01"
@@ -13,9 +13,10 @@ function Home() {
     const timestamp3 = +new Date(zippy)
 
     return (
+
         <div>
             <Header/>
-            <div className="container-fluid">
+            <div className="container flex-column">
                 <div className='row'>
                     <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                         <p className="mb-4 font-weight-bold text-uppercase">Remaining time on PS-CC/EAG</p>

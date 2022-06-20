@@ -1,0 +1,22 @@
+{
+"AM_end":{
+  "date": "2022-7-1",
+  "message": "Congratulation, you are out of hell"
+},
+  "CZ_end": {
+    "date": "2022-7-1",
+    "message": "Congratulation, you are back 'home'"
+  },
+  "retirement": {
+    "date": "2047-09-01",
+    "message": "congrats you are now old"
+  },
+  "Nourish": {
+    "date": "2040-09-01",
+    "message": "He can earn money also"
+  },
+  "birthday": {
+    "date": "2023-08-01",
+    "message": "Happy birthday!"
+  }
+}

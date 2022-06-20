@@ -1,7 +1,4 @@
 import './App.css';
-import CountdownTimer from "./components/CountdownTimer/CountdownTimer";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import './bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from "./Pages/Home";

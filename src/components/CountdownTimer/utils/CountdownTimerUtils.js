@@ -5,10 +5,10 @@ export function getRemainingTimeUntilMsTimestamp(timestampMs) {
     const nowDayjs = dayjs()
     if(timestampDayjs.isBefore(nowDayjs)) {
         return {
-            seconds: '00',
-            minutes: '00',
-            hours: '00',
-            days: '00'
+            seconds: getSeconds(timestampDayjs, nowDayjs),
+            minutes: getMinutes(timestampDayjs, nowDayjs),
+            hours: getHours(timestampDayjs, nowDayjs),
+            days: getDays(timestampDayjs, nowDayjs)
         }
     }
     return {
@@ -35,6 +35,25 @@ function getRemainingHours(nowDayjs, timestampDayjs) {
 }
 
 function getRemainingDays(nowDayjs, timestampDayjs) {
+    return timestampDayjs.diff(nowDayjs, 'days').toString()
+}
+
+function getSeconds(nowDayjs, timestampDayjs) {
+    const seconds = timestampDayjs.diff(nowDayjs, 'seconds') % 60
+    return padWithZeros(seconds, 2)
+}
+
+function getMinutes(nowDayjs, timestampDayjs) {
+    const minutes = timestampDayjs.diff(nowDayjs, 'minutes') % 60
+    return padWithZeros(minutes, 2)
+}
+
+function getHours(nowDayjs, timestampDayjs) {
+    const hours = timestampDayjs.diff(nowDayjs, 'hours') % 24
+    return padWithZeros(hours, 2)
+}
+
+function getDays(nowDayjs, timestampDayjs) {
     return timestampDayjs.diff(nowDayjs, 'days').toString()
 }
 
