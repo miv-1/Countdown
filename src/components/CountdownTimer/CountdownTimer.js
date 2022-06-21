@@ -10,23 +10,23 @@ const defaultRemainingTime = {
 };
 
 const CountdownTimer = ({ countdownTimestampMs }) => {
-  const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
+    const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
 
-  const date = new Date();
-  const timeZoneOffset = date.getTimezoneOffset() * 60000;
-  let timestamp = countdownTimestampMs + timeZoneOffset;
+    const date = new Date();
+    const timeZoneOffset = date.getTimezoneOffset() * 60000;
+    let timestamp = countdownTimestampMs + timeZoneOffset;
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      updateRemainingTime(timestamp);
-    }, 1000);
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            updateRemainingTime(timestamp);
+        }, 1000);
 
-    return () => clearInterval(intervalId);
-  }, [timestamp]);
+        return () => clearInterval(intervalId);
+    }, [timestamp]);
 
-  function updateRemainingTime(countdown) {
-    setRemainingTime(getRemainingTimeUntilMsTimestamp(countdown));
-  }
+    function updateRemainingTime(countdown) {
+        setRemainingTime(getRemainingTimeUntilMsTimestamp(countdown));
+    }
 
   return (
     <div className="countdown-timer">
