@@ -1,6 +1,7 @@
 import React from "react";
 import '../bootstrap.min.css'
-import picture from '../images/PHOTO-2022-06-20-15-05-41.jpg'
+import '../Pages/HelloThere.css'
+import picture from '../images/PHOTO-2022-06-20-15-05-41.png'
 
 function HelloThere() {
   return (
@@ -26,7 +27,7 @@ function HelloThere() {
               commodo. <a href="/" className="alert-link">what are looking for?
               </a>.</p>
 
-          <div className=''>
+          <div className='image'>
               <img src={picture} alt="Logo"/>
           </div>
 
