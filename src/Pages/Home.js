@@ -1,83 +1,25 @@
-import Header from "../components/Header";
-import CountdownTimer from "../components/CountdownTimer/CountdownTimer";
-import Footer from "../components/Footer";
+import Card from "../components/Card";
+import customData from "../data.json";
+import '../bootstrap.min.css'
 
 function Home() {
-    const myDate = "2022-07-01"
-    const timestamp = +new Date(myDate)
+  const currentTimestamp = Date.now();
+  const cards = customData.data;
 
-    const retirement = "2047-09-01"
-    const timestamp2 = +new Date(retirement)
-
-    const zippy = "2040-09-01"
-    const timestamp3 = +new Date(zippy)
-
-    return (
-
-        <div>
-            <Header/>
-            <div className="container flex-column">
-                <div className='row'>
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">Remaining time on PS-CC/EAG</p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp}/>
-                        </div>
-
-
-                    </div>
-
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">Remaining time in CZ</p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp}/>
-                        </div>
-
-
-                    </div>
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">Retirement</p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp2}/>
-                        </div>
-
-
-                    </div>
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">Nourish </p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp3}/>
-                        </div>
-
-
-                    </div>
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">another event</p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp2}/>
-                        </div>
-
-
-                    </div>
-                    <div className="col rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p className="mb-4 font-weight-bold text-uppercase">another event</p>
-                        <div id="clock-b" className="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <CountdownTimer
-                                countdownTimestampMs={timestamp2}/>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className="container d-flex justify-content-center">
+      <div className="row" >
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            title={card.title}
+            doDateTimestamp={Date.parse(card.doDate)}
+            currentTimestamp={currentTimestamp}
+            message={card.message}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
-export default Home
+export default Home;
