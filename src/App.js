@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HelloThere from "./Pages/HelloThere";
+import ErrorPage from "./Pages/404";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/HelloThere" element={<HelloThere />} />
-        <Route path="*" element={<h1>This page does not exist.</h1>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
