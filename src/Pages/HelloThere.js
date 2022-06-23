@@ -1,7 +1,7 @@
 import React from "react";
 import '../bootstrap.min.css'
 import '../Pages/HelloThere.css'
-import pic from '../images/67E2CADF-4DD6-4705-9EA8-B1D59C32E306.png' 
+import pic from '../images/67E2CADF-4DD6-4705-9EA8-B1D59C32E306.png'
 
 
 function HelloThere() {
