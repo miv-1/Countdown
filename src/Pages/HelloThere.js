@@ -30,7 +30,6 @@ function HelloThere() {
             </div>
 
           <div className='image'>
-              <img src={picture} alt="Logo"/>
               <img src={pic} alt="Meme"/>
           </div>
 
