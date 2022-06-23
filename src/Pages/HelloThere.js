@@ -7,7 +7,7 @@ function HelloThere() {
   return (
       <div className="container">
           <br/>
-          <h4 className="alert-heading">Warning! You are now in depresive street! Be careful of Mr. Outly</h4>
+          <h4 className="alert-heading">Warning boss :) this page is full of toxic comments. </h4>
           <br/>
           <div className="mb-0">
               <p>
