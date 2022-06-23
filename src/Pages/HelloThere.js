@@ -2,6 +2,8 @@ import React from "react";
 import '../bootstrap.min.css'
 import '../Pages/HelloThere.css'
 import picture from '../images/PHOTO-2022-06-20-15-05-41.png'
+import pic from '../images/ivan.png'
+
 
 function HelloThere() {
   return (
@@ -22,10 +24,14 @@ function HelloThere() {
               Thank you boss for staying with us for 5 years, for your support. We have enjoyed working with you! Good luck with your new position. Perhaps our paths will cross again in the future.  <a href="/GPA" className="alert-link">Would like to see GPA going to moon again? Click on this link!
               </a>.
             </p>
+                  <p>
+                    Thank you! Danke! Gracias! Děkujeme! Köszönöm! धन्यवाद! Hvala vam! Ďakujeme!(Brno)
+                    </p>
             </div>
 
           <div className='image'>
               <img src={picture} alt="Logo"/>
+              <img src={pic} alt="Meme"/>
           </div>
 
       </div>
