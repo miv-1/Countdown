@@ -19,11 +19,7 @@ function HelloThere() {
                   "I was studying frequency in my physics class. Now my brain Hertz."
               </p>
             <p>
-              Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla non arcu lacinia neque faucibus
-              fringilla. Donec iaculis gravida nulla. Vivamus porttitor turpis ac leo. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus faucibus molestie nisl. Mauris
-              metus. Etiam quis quam. Aenean fermentum risus id tortor. Fusce wisi. Donec quis nibh at felis congue
-              commodo. <a href="/r" className="alert-link">Would like to see GPA going to moon again? Click on this link!
+              Thank you boss for staying with us for 5 years, for your support. We have enjoyed working with you! Good luck with your new position. Perhaps our paths will cross again in the future.  <a href="/r" className="alert-link">Would like to see GPA going to moon again? Click on this link!
               </a>.
             </p>
             </div>
