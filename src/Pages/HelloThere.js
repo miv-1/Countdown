@@ -24,8 +24,8 @@ function HelloThere() {
               </a>.
             </p>
                   <p>
-                    Thank you! Danke! Gracias! Děkujeme! Köszönöm! धन्यवाद! Hvala vam! Ďakujeme!
-                    <ahref="https://de.wikipedia.org/wiki/Brno" className="alert-link">
+                    Thank you! Danke! Gracias! Děkujeme! Köszönöm! धन्यवाद! Hvala vam! Ďakujeme! 
+                    <a href="https://de.wikipedia.org/wiki/Brno" className="alert-link">
                     (Brno)
                     </a>
                     </p>
